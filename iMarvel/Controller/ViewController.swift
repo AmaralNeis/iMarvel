@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        MovieService().get(page: 1) { (response, isSuccess) in
+            dump(response)
+        }
     }
 
 
