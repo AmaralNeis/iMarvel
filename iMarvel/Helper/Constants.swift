@@ -10,7 +10,7 @@ import Foundation
 
 class Constants {
     
-    static let baseUrl = "https://api.themoviedb.org/3/movie"
+    static let baseUrl = "https://api.themoviedb.org/3"
     static let apiKey = "f904cf86144b894c318adbcaa277b210"
     static let language = "pt-BR"
     static let sizeImage = "w500"

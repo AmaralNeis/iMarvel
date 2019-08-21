@@ -16,6 +16,13 @@
 		FD18A4E6230B4614006E3FE9 /* ApiResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD18A4E5230B4614006E3FE9 /* ApiResults.swift */; };
 		FD18A4E8230B46B2006E3FE9 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD18A4E7230B46B2006E3FE9 /* MovieService.swift */; };
 		FD18A4EB230B4830006E3FE9 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD18A4EA230B4830006E3FE9 /* EndPoints.swift */; };
+		FD1A69B7230C2F5D0061B04A /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A69B6230C2F5D0061B04A /* MovieViewModel.swift */; };
+		FD1A69BA230C31800061B04A /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A69B9230C31800061B04A /* String+.swift */; };
+		FD1A69BC230C34400061B04A /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A69BB230C34400061B04A /* MoviesTableViewController.swift */; };
+		FD1A69BE230C39310061B04A /* ActivityIndicatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1A69BD230C39310061B04A /* ActivityIndicatorHelper.swift */; };
+		FD474DB9230CB21000ABC001 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD474DB8230CB21000ABC001 /* UITableView+.swift */; };
+		FD474DBB230CBF7500ABC001 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD474DBA230CBF7500ABC001 /* NetworkHelper.swift */; };
+		FD474DBD230CDB1800ABC001 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD474DBC230CDB1800ABC001 /* DetailMovieViewController.swift */; };
 		FD71303C230B8D3700B328F0 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71303A230B8D3700B328F0 /* MovieTableViewCell.swift */; };
 		FD71303D230B8D3700B328F0 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD71303B230B8D3700B328F0 /* MovieTableViewCell.xib */; };
 		FDFA52CA2308AD0600B8B7F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFA52C92308AD0600B8B7F8 /* AppDelegate.swift */; };
@@ -37,6 +44,13 @@
 		FD18A4E5230B4614006E3FE9 /* ApiResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResults.swift; sourceTree = "<group>"; };
 		FD18A4E7230B46B2006E3FE9 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		FD18A4EA230B4830006E3FE9 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		FD1A69B6230C2F5D0061B04A /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		FD1A69B9230C31800061B04A /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		FD1A69BB230C34400061B04A /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
+		FD1A69BD230C39310061B04A /* ActivityIndicatorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorHelper.swift; sourceTree = "<group>"; };
+		FD474DB8230CB21000ABC001 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		FD474DBA230CBF7500ABC001 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		FD474DBC230CDB1800ABC001 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
 		FD71303A230B8D3700B328F0 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		FD71303B230B8D3700B328F0 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		FDFA52C62308AD0600B8B7F8 /* iMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				FD18A4DB230B4096006E3FE9 /* Constants.swift */,
+				FD1A69BD230C39310061B04A /* ActivityIndicatorHelper.swift */,
+				FD474DBA230CBF7500ABC001 /* NetworkHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -91,6 +107,15 @@
 				FD18A4EA230B4830006E3FE9 /* EndPoints.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		FD1A69B8230C31740061B04A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A69B9230C31800061B04A /* String+.swift */,
+				FD474DB8230CB21000ABC001 /* UITableView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FD71303E230B8D3C00B328F0 /* MovieTableViewCell */ = {
@@ -123,6 +148,7 @@
 		FDFA52C82308AD0600B8B7F8 /* iMarvel */ = {
 			isa = PBXGroup;
 			children = (
+				FD1A69B8230C31740061B04A /* Extensions */,
 				FD18A4E9230B4824006E3FE9 /* Enums */,
 				FD18A4DA230B406B006E3FE9 /* Helper */,
 				FDFA52DF2308AEF400B8B7F8 /* Controller */,
@@ -178,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				FDFA52CB2308AD0600B8B7F8 /* ViewController.swift */,
+				FD1A69BB230C34400061B04A /* MoviesTableViewController.swift */,
+				FD474DBC230CDB1800ABC001 /* DetailMovieViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +222,7 @@
 		FDFA52E12308AF2D00B8B7F8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FD1A69B6230C2F5D0061B04A /* MovieViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -286,6 +315,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iMarvel/Pods-iMarvel-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -293,6 +323,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,17 +360,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1A69BC230C34400061B04A /* MoviesTableViewController.swift in Sources */,
 				FD18A4E4230B44A3006E3FE9 /* Movie.swift in Sources */,
 				FDFA52CC2308AD0600B8B7F8 /* ViewController.swift in Sources */,
 				FDFA52CA2308AD0600B8B7F8 /* AppDelegate.swift in Sources */,
 				FD18A4DE230B434A006E3FE9 /* HttpClient.swift in Sources */,
 				FD18A4E2230B4469006E3FE9 /* Genre.swift in Sources */,
 				FD18A4E0230B43AB006E3FE9 /* Api.swift in Sources */,
+				FD1A69BE230C39310061B04A /* ActivityIndicatorHelper.swift in Sources */,
 				FD18A4EB230B4830006E3FE9 /* EndPoints.swift in Sources */,
 				FD18A4E8230B46B2006E3FE9 /* MovieService.swift in Sources */,
+				FD474DBD230CDB1800ABC001 /* DetailMovieViewController.swift in Sources */,
+				FD474DBB230CBF7500ABC001 /* NetworkHelper.swift in Sources */,
+				FD474DB9230CB21000ABC001 /* UITableView+.swift in Sources */,
 				FD18A4DC230B4096006E3FE9 /* Constants.swift in Sources */,
 				FD71303C230B8D3700B328F0 /* MovieTableViewCell.swift in Sources */,
+				FD1A69BA230C31800061B04A /* String+.swift in Sources */,
 				FD18A4E6230B4614006E3FE9 /* ApiResults.swift in Sources */,
+				FD1A69B7230C2F5D0061B04A /* MovieViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iMarvel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,6 +544,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iMarvel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

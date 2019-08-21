@@ -8,4 +8,6 @@ target 'iMarvel' do
   # Pods for iMarvel
     pod 'Alamofire', '~> 4.7'
     pod 'Kingfisher'
+    pod 'Cosmos'
+    
 end

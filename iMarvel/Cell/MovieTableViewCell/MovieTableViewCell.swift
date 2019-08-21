@@ -7,18 +7,32 @@
 //
 
 import UIKit
+import Kingfisher
+import Cosmos
 
 class MovieTableViewCell: UITableViewCell {
-
+    
+    // MARK: Outlet
+    @IBOutlet weak var overviewLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var releaseDateLabel: UILabel!
+    @IBOutlet weak var posterImageView: UIImageView!
+    @IBOutlet weak var cosmosView: CosmosView!
+    @IBOutlet weak var voteCountLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
+    func setupCell(with movieModel: Movie) {
+        let movie = MovieViewModel(with: movieModel)
+        overviewLabel.text = movie.overview
+        titleLabel.text = movie.title
+        releaseDateLabel.text = movie.releaseDate
+        cosmosView.rating = movie.voteAverage
+        voteCountLabel.text =  String(format: "%02d", movie.voteCount)
+        posterImageView.kf.setImage(with: URL(string: movie.posterPath))
+        
+    }
 }

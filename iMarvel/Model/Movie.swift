@@ -18,8 +18,8 @@ protocol MovieProtocol {
     var voteAverage: Double { get }
     var overview: String { get }
     var homepage: String { get }
-    var runtime: Int { get }
-    var genres: [Genre] { get }
+    var runtime: String { get }
+    var genres: String { get }
 }
 
 struct Movie: Codable {

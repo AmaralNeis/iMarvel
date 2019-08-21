@@ -14,3 +14,9 @@ struct ApiResults<T: Codable>: Codable {
     let totalPages: Int
     let results: [T]
 }
+
+
+
+
+
+
