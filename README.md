@@ -1,5 +1,5 @@
 # iMarvel
-O iMarvel é um aplicativo de para o pessoal da SOUTH SYSTEM acompanhar os ultimos lançamentos do cinema ;D.
+O iMarvel é um aplicativo de para o pessoal acompanhar os ultimos lançamentos do cinema ;D.
 ### Executando 
   ``` Este projeto foi desenvolvido utilizando xCode 10.2.1 e Swift 4.2 ``` 
   Antes de executar o projeto é necessário instalar o `cocoapods`. Caso você não tenha o `cocoapods` instalado basta apenas clicar [aqui](https://guides.cocoapods.org/using/getting-started.html) e seguir o tutorial. 
